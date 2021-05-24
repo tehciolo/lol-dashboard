@@ -4,6 +4,12 @@
   environment = { NODE_VERSION = "14" }
 
 [[redirects]]
+  force = true
+  from = '/api/*'
+  status = 200
+  to = '/.netlify/functions/:splat'
+
+[[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
@@ -13,3 +19,6 @@
   for = "/*"
   [headers.values]
     Permissions-Policy = "interest-cohort=()"
+
+[dev]
+  autoLaunch = false

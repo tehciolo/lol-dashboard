@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "vite",
+    "netlify": "netlify dev",
     "build": "vite build",
     "serve": "vite preview"
   },
